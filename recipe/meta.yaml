@@ -1,4 +1,4 @@
-{% set version = '1.4.8' %}
+{% set version = "1.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SSBtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SSBtools/SSBtools_{{ version }}.tar.gz
-  sha256: 918ffd1fe9fabd0f1bb1c404bf9ea5e1c0aebab9058829999b5fdeb76b4ac798
+  sha256: f0fa8549d27fcea8ce013bac7f92dde71e0f9e9f068d8b176c324d1a3b514bd3
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -43,10 +43,7 @@ test:
 about:
   home: https://github.com/statisticsnorway/SSBtools
   license: MIT
-  summary: Functions used by other packages from Statistics Norway are gathered. General data
-    manipulation functions, and functions for hierarchical computations are included
-    (Langsrud, 2020) <doi:10.13140/RG.2.2.27313.61283>. The hierarchy specification
-    functions are useful within statistical disclosure control.
+  summary: Functions used by other packages from Statistics Norway are gathered. General data manipulation functions, and functions for hierarchical computations are included (Langsrud, 2020) <doi:10.13140/RG.2.2.27313.61283>. The hierarchy specification functions are useful within statistical disclosure control.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
