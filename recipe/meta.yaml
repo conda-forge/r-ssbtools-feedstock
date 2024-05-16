@@ -1,4 +1,4 @@
-{% set version = "1.5.0" %}
+{% set version = "1.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SSBtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SSBtools/SSBtools_{{ version }}.tar.gz
-  sha256: f0fa8549d27fcea8ce013bac7f92dde71e0f9e9f068d8b176c324d1a3b514bd3
+  sha256: d8043ff1941fe19a4f3a8a1ca1ee1af84d2db046991d46a90a59b1a11fb575e6
 
 build:
   merge_build_host: true  # [win]
