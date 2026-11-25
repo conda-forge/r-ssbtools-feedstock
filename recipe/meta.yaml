@@ -1,4 +1,4 @@
-{% set version = "1.8.9" %}
+{% set version = "1.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SSBtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SSBtools/SSBtools_{{ version }}.tar.gz
-  sha256: ac9d4c36596f3f1d2b0e0f42d5add9008ea24cb248aa0810612e9a8c71beb002
+  sha256: 3ebb8495fcd94c2214e856c22d4bbe04deecfddb961a0e09a73e0d7ee4e6dae8
 
 build:
   number: 0
